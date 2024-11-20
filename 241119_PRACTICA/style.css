@@ -1,0 +1,21 @@
+body{
+    /* font-family- Tipografía Hay algunos navegadores que no son compatibles con alguna fuente, por eso se enlistan muchos tipos en este
+    line-height el numero que se pone toma como referencia el tamaño de la fuente, espaciado para mejorar la legibilidad*/
+    background-color: bisque;
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 1.5;   
+}
+header{
+    /* rgb(213,131,113, 0.5) 
+    background: linear-gradient(blue,pink)-Para hacer un degradado
+    text-align-Solo funciona con elementos en bloque porque afecta el contenido dentro del pbloque. No funciona en elementos en líena porque estos elementos solo ocupan solo el espacio necesario para su contenido
+    */
+    background-color: rgb(213, 131, 113, 0.5);
+    color: #B95843;
+    text-align: center;
+    
+}
+
+footer{
+    background-color: #E7B0A5;
+}
