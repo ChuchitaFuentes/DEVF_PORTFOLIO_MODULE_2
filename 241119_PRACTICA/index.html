@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>HTML base para CSS</title>
 </head>
 <body>
     <header>
         <h1>Curso básico de CSS</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#detalles">Detalles del curso</a></li>
-                <li><a href="#contacto">Contáctanos</a></li>
+        <nav >
+            <ul class="menu">
+                <li><a href="#inicio" class="enlace">Inicio</a></li>
+                <li><a href="#detalles"class="enlace">Detalles del curso</a></li>
+                <li><a href="#contacto" class="enlace">Contáctanos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="inicio">
-            <h2>Introducción</h2>
+            <h2 class="subtitulo">Introducción</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa omnis cum ipsa, aspernatur inventore labore aperiam dolor fuga enim incidunt corrupti voluptate repellendus facere in tempora eum earum officiis magni?</p>
         </section>
         <section id="detalles">
-            <h2>Detalles del curso</h2>
+            <h2 class="subtitulo">Detalles del curso</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             <ul>
                 <li>Conceptos básicos</li>
@@ -31,8 +32,8 @@
             </ul>
         </section>
         <section id="contacto">
-            <h2>Contáctacnos</h2>
-            <button>Quiero más información</button>
+            <h2 class="subtitulo">Contáctacnos</h2>
+            <button class="boton-contacto">Quiero más información</button>
         </section>
     </main>
     <footer>
