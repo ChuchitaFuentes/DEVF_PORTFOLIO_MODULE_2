@@ -45,6 +45,14 @@ h2{
 /* Si un elemento tiene dos clases asignadas y una característica se modifica por segunda vez se quedará con la segunda característica */
 .block{
     display: block;
+    height: 30px;
     width: 150px;
 
+}
+
+.inline{
+    display: inline;
+    /* width y height son ignorados porque los elementos inline no respetan estra propiedad */
+    height: 30px;
+    width: 150px;
 }
