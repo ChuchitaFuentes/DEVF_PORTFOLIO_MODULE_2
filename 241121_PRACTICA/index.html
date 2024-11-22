@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Box Model y Display</title>
 </head>
+
 <body>
     <header>
         <h1>Explorando el box modelo y display</h1>
@@ -13,7 +15,7 @@
     </header>
     <main>
         <!-- Secciones de mi página -->
-         <section>
+        <section>
             <h2>Display: Block</h2>
             <p>Los elementos con display de tipo bloque ocupan el ancho completo disponible y empiezan en una línea.</p>
             <div class="box block">
@@ -23,20 +25,83 @@
             <div class="box block">
                 Soy otro elemento block.
             </div>
-         </section>
-         <section>
+        </section>
+        <section>
             <h2>Display:Inline</h2>
-            <p>Los elementos con display :inline solo cupan el ancho necesario y no aceptan propiedades de tamaño como height y widht</p>
+            <p>Los elementos con display :inline solo cupan el ancho necesario y no aceptan propiedades de tamaño como
+                height y widht</p>
             <span class="box inline">
                 Soy inline
             </span>
             <span class="box inline">
                 Soy otro inline
             </span>
-         </section>
+        </section>
+        <section>
+            <h2>Display: Inline-block</h2>
+            <p>Los elementos con display: inline-block combinan las caracteríasticas de inline (no rompen las línea) con
+                block aceptan width y height</p>
+            <span class="box inline-block">
+                Soy inline-block
+            </span>
+            <span class="box inline-block">
+                Soy otro inline-block
+            </span>
+        </section>
+        <section>
+            <h2>El box modelo en accion</h2>
+            <p>El box model afecta el espacio y diseño de cada elemento según su display.</p>
+            <div>
+                <h3>Display:Block</h3>
+                <p>Cada elemento de tipo lock ocupa el ancho completo y se aplilan uno debajo del otro.</p>
+                <p>El padding, border y margin funcionan como se esperan</p>
+                <div class="box block model">
+                    Bloque 1
+                </div>
+                <div class="box block model">
+                    Bloque 2
+                </div>
+            </div>
+            <div>
+                <h3> Display:Inline</h3>
+                <p>Los elementos inline se alinean horizontalmente como texto</p>
+                <p>El margin horizontal (izquierda y derecha) funciona, pero el vertical (arriba y abajo) no afecta  el flujo del documento. Es decir, se ignoran las propiedades.</p>
+                <span class="box inline model">
+                    Inline 1
+                </span>
+                <span class="box inline model">
+                    Inline 2
+                </span>
+            </div>
+
+            <div>
+                <h3>Display: Inline-block</h3>
+                <p>Los elementos inline-block se alinean horizonatalmente como inline pero permiten usar width height,
+                    border y margin como los elementos de display-block.</p>
+                <span class="box inline-block model">
+                    Inline-block 1
+                </span>
+                <span class="box inline-block model">
+                    Inline-block 2
+                </span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Box-sizing:Content-box vs Brder-box</h2>
+            <p>La propiedad box-sizing define cómo se clacula el ancho y el alto del elemento</p>
+            <div class="content-box">
+                Content-box(default)
+            </div>
+            <div class="border-box">
+                Border-box
+            </div>
+        </section>
+
     </main>
     <footer>
         2024 María de Jesús. Todos los derechos reservados.
     </footer>
 </body>
+
 </html>
