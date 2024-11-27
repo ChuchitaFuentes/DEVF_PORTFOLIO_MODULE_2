@@ -11,6 +11,13 @@ body{
     color: #333;
     background-color: #f4f4f4;
 }
+header, main, footer{
+    margin: 0;
+    padding: 20px;    
+}
+footer{
+    text-align: center;
+}
 /* Según la propiedad de especificidad se va a dar mayor prioridad al selector que sea más delimitado.
 En este caso header h1*/
 header h1 {
@@ -18,4 +25,8 @@ header h1 {
 }
 h1{
     color: blue;
+}
+.author{
+    font-weight: bold;
+    color: darkcyan;
 }
