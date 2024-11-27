@@ -30,3 +30,29 @@ h1{
     font-weight: bold;
     color: darkcyan;
 }
+
+.subtitle{
+    font-size: 18px;
+    color: darkgreen;
+}
+
+.lista-tareas{
+    list-style-type: none;
+    margin-top: 25px;
+    padding: 0;
+}
+.lista-tareas li{
+    margin-bottom: 15px;
+}
+
+.tarea-checkbox{
+    margin-right: 15px;
+    accent-color: darkcyan;
+    cursor: pointer;    
+}
+
+.tarea-checkbox:checked +.tarea-descripcion{
+    text-decoration: line-through;
+    font-style: italic;
+    color:lightgray;
+}
