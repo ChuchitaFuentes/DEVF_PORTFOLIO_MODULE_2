@@ -1,3 +1,11 @@
+/*  */
+:root{
+    --color-primario:darkcyan; 
+    --color-secundario: darkgreen;
+    --color-background: #f4f4f4;
+    --color-terciario: lightgray;
+    --color-texto:#333;
+}
 /* Reset básico */
 *{
     box-sizing: border-box;
@@ -8,8 +16,8 @@ body{
     padding: 0;
     /* Estilos generales aplicados en body que se heredan a los hijos */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #333;
-    background-color: #f4f4f4;
+    color: var(--color-texto);
+    background-color: var(--color-background);
 }
 header, main, footer{
     margin: 0;
@@ -21,19 +29,19 @@ footer{
 /* Según la propiedad de especificidad se va a dar mayor prioridad al selector que sea más delimitado.
 En este caso header h1*/
 header h1 {
-    color: darkcyan;
+    color: var(--color-primario);
 }
 h1{
     color: blue;
 }
 .author{
     font-weight: bold;
-    color: darkcyan;
+    color: var(--color-primario);
 }
 
 .subtitle{
     font-size: 18px;
-    color: darkgreen;
+    color: var(--color-secundario);
 }
 
 .lista-tareas{
@@ -47,12 +55,12 @@ h1{
 
 .tarea-checkbox{
     margin-right: 15px;
-    accent-color: darkcyan;
+    accent-color: var(--color-primario);
     cursor: pointer;    
 }
 
 .tarea-checkbox:checked +.tarea-descripcion{
     text-decoration: line-through;
     font-style: italic;
-    color:lightgray;
+    color:var(--color-terciario);
 }
