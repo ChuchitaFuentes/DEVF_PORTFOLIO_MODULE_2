@@ -84,6 +84,41 @@ header{
     height: 150px;
     border-radius: 50%;
 }
+
+.productos{
+    padding: 20px;
+    margin: 10px 0;
+}
+.lista-carrusel{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    /* El contenedor permita un desplazamiento horizontal */
+    overflow-x: auto;
+    /* Indica como quiero que encajen los elemento dentro de la vista que está disponible en navegdor, que no se corten a la vista 
+    se relaciona con scroll snap align en cada item*/
+    /* Me ayuda a definir como se comportan los puntos de desplazamiento de mi contenedor, como quiero que se adapten los elementos que son visibles dentro del contenedor X significa que el desplazamiento se hace en el eje x MANDATORY el scroll se ajustará al siguiente punto de ajuste definido */
+    scroll-snap-type: x mandatory;
+}
+.producto-item{
+    /* Define como los elementos individuales dentro de un contenedor de scroll se alinean cuando se ajustan */
+    scroll-snap-align: start;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+.producto-item img{
+    border-radius: 10px;
+}
+.producto-titulo{
+    font-size: 16px;
+    font-weight: bold;
+}
+.producto-precio{
+    font-size: 14px;
+    color: #0070F3;
+    font-weight: bold;
+}
 footer{
     text-align: center;
     padding: 10px;
