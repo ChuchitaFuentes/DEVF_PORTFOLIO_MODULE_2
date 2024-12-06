@@ -56,3 +56,13 @@ header{
     color: var(--color-secundario);
     text-transform:uppercase;
 }
+
+footer{
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--color-principal);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+}
