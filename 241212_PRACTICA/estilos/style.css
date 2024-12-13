@@ -57,6 +57,7 @@ footer{
     padding: 1.5rem;
     border-radius: .5rem;
     text-align: center;
+    /* overflow: auto; */
     background-color: var(--color-categoria);
     transition: background-color 0.3s;
 }
